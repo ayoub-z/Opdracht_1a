@@ -1,0 +1,7 @@
+  I want to Remove all white   spaces, new lines 
+  
+ and    tabs.   
+
+
+
+Yes.
