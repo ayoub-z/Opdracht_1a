@@ -1,22 +1,20 @@
 # ---Opdracht 2 - Tekstcheck
+def tekst_check():
+    userInput1 = input("Enter the first word or sentence: ")
+    userInput2 = input("Enter the second word or sentence: ")
 
-userInput1 = input("Geef een string: ")
-userInput2 = input("Geef een string: ")
+    counter = 0
+    minimum = min(len(userInput1),len(userInput2))
+    for i in range(0,minimum-1):
+        while True:
+            if userInput1[counter] != userInput2[counter]:
+                print ('The first difference is on index: ',(counter+1))
+                exit()
+            elif counter == minimum-1:
+                print ('There is no difference')
+                exit()
+            else:
+                counter += 1
 
-counter = 0
-minimum = min(len(userInput1),len(userInput2))
-running = True
-
-for i in range(0,minimum-1):
-    while running:
-        if userInput1[counter] != userInput2[counter]:
-            print ('Het eerste verschil zit op index: ',(counter+1))
-            running = False
-        elif counter == minimum-1:
-            print ('Het eerste verschil zit op indexx: ', (counter +2))
-            running = False
-        else:
-            counter += 1
-
-
+tekst_check()
 
