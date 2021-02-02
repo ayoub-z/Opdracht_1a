@@ -1,7 +1,5 @@
 from random import *
 
-
-# --Short version
 def random1():
     number = randrange(1,6)
     while True:
