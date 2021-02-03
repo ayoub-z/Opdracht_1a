@@ -1,4 +1,5 @@
 #Pyramid with for loops
+'''Inverted pyramid vond ik een beetje lastig'''
 def p_for():
     size = int(input("How many blocks high: "))
     if size == 0:

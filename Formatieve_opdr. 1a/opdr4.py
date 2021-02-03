@@ -21,5 +21,3 @@ def palindrome2(i):
 palindrome()
 palindrome2('lepel')
 palindrome2('fiets')
-
-
